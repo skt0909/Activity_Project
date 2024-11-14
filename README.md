@@ -1,1 +1,1 @@
-## Activity Project For Health Mangement
+## Activity Project For Health Management
