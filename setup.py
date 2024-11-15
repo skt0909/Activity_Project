@@ -1,5 +1,4 @@
-##Important for Packaging and distributing Project.
-
+##Important for Packaging and distributing Project 
 
 from setuptools import find_packages,setup ##Consider folder as packages
 from typing import List  ##
