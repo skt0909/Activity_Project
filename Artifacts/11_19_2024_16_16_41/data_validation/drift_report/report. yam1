@@ -1,0 +1,39 @@
+calories:
+  drift_status: false
+  p_value: .nan
+distance:
+  drift_status: false
+  p_value: 0.3387168687565987
+fairlyActiveMinutes:
+  drift_status: false
+  p_value: 0.5377706933454971
+lightActiveDistance:
+  drift_status: false
+  p_value: 0.6310495261016554
+lightlyActiveMinutes:
+  drift_status: false
+  p_value: 0.7331458095660559
+loggedActivitiesDistance:
+  drift_status: false
+  p_value: 0.9912504273589429
+moderatelyActiveDistance:
+  drift_status: false
+  p_value: 0.727333099316269
+sedentaryActiveDistance:
+  drift_status: false
+  p_value: 0.9999966181180854
+sedentaryMinutes:
+  drift_status: false
+  p_value: 0.6413312168782933
+steps:
+  drift_status: false
+  p_value: 0.47863636872499743
+trackerDistance:
+  drift_status: false
+  p_value: 0.37063299166622166
+veryActiveDistance:
+  drift_status: false
+  p_value: 0.8607358917543712
+veryActiveMinutes:
+  drift_status: false
+  p_value: 0.9293321880577395

@@ -1,0 +1,28 @@
+columns:
+  - name: steps
+    type: INTEGER
+  - name: distance
+    type: FLOAT
+  - name: trackerDistance
+    type: FLOAT
+  - name: loggedActivitiesDistance
+    type: FLOAT
+  - name: veryActiveDistance
+    type: FLOAT
+  - name: moderatelyActiveDistance
+    type: FLOAT
+  - name: lightActiveDistance
+    type: FLOAT
+  - name: sedentaryActiveDistance
+    type: FLOAT
+  - name: veryActiveMinutes
+    type: INTEGER
+  - name: fairlyActiveMinutes
+    type: INTEGER
+  - name: lightlyActiveMinutes
+    type: INTEGER
+  - name: sedentaryMinutes
+    type: INTEGER
+  - name: calories
+    type: INTEGER
+
