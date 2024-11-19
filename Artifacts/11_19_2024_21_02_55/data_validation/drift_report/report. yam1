@@ -3,37 +3,37 @@ calories:
   p_value: .nan
 distance:
   drift_status: false
-  p_value: 0.3387168687565987
+  p_value: 0.18302049463879935
 fairlyActiveMinutes:
   drift_status: false
-  p_value: 0.5377706933454971
+  p_value: 0.9997930823124153
 lightActiveDistance:
   drift_status: false
-  p_value: 0.6310495261016554
+  p_value: 0.06978756206971959
 lightlyActiveMinutes:
   drift_status: false
-  p_value: 0.7331458095660559
+  p_value: 0.39175653457513027
 loggedActivitiesDistance:
   drift_status: false
-  p_value: 0.9912504273589429
+  p_value: 0.9999999999801588
 moderatelyActiveDistance:
   drift_status: false
-  p_value: 0.727333099316269
+  p_value: 0.9780651708327545
 sedentaryActiveDistance:
   drift_status: false
-  p_value: 0.9999966181180854
+  p_value: 1.0
 sedentaryMinutes:
   drift_status: false
-  p_value: 0.6413312168782933
+  p_value: 0.49974901425351687
 steps:
   drift_status: false
-  p_value: 0.47863636872499743
+  p_value: 0.14862285366654854
 trackerDistance:
   drift_status: false
-  p_value: 0.37063299166622166
+  p_value: 0.2471289618852643
 veryActiveDistance:
   drift_status: false
-  p_value: 0.8607358917543712
+  p_value: 0.987237712728049
 veryActiveMinutes:
   drift_status: false
-  p_value: 0.9293321880577395
+  p_value: 0.7224121013442932
