@@ -15,6 +15,13 @@ class DataValidationArtifact:
     invalid_test_file_path: str
     drift_report_file_path: str
 
+
 @dataclass
 class DataTransformationConfig:
     preprocessor_obj_file_path=os.path.join('artifacts','preprocessor.pkl')
+
+@dataclass
+class ModelTrainerConfig:
+    trained_model_file=os.path.join("artifacts","model.pkl")
+
+
