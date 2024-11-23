@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+import os
 
 @dataclass
 class DataIngestionArtifact:
@@ -15,7 +16,5 @@ class DataValidationArtifact:
     drift_report_file_path: str
 
 @dataclass
-class DataTransformationArtifact:
-    transformed_object_file_path: str
-    transformed_train_file_path: str
-    transformed_test_file_path: str
+class DataTransformationConfig:
+    preprocessor_obj_file_path=os.path.join('artifacts','preprocessor.pkl')
