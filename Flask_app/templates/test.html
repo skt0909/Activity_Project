@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Dashboard</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        .plot-container {
+            display: flex;
+            justify-content: space-around;
+        }
+        .plot-container > div {
+            width: 30%;
+            height: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Activity Dashboard</h1>
+    <div class="plot-container">
+        <div>
+            <h3>Activity Completion</h3>
+            {{ activity_plot|safe }}
+        </div>
+        <div>
+            <h3>Diet Progress</h3>
+            {{ diet_plot|safe }}
+        </div>
+        <div>
+            <h3>Recommended Sleep</h3>
+            {{ sleep_plot|safe }}
+        </div>
+    </div>
+</body>
+</html>

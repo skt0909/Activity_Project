@@ -5,6 +5,7 @@ import os,sys
 import dill
 from sklearn.metrics import r2_score
 import numpy as np
+import pickle
 from sklearn.impute import SimpleImputer
 import mlflow
 import mlflow.sklearn
@@ -74,7 +75,34 @@ def save_object(file_path, obj):
             dill.dump(obj, file_obj)
     except Exception as e:
         raise ActivityException(e,sys)
+    
+from dotenv import load_dotenv
+load_dotenv()
 
+# Fetch file paths from the environment variables
+preprocessor_file_path = os.getenv('PREPROCESSOR_FILE_PATH')
+model_file_path = os.getenv('MODEL_FILE_PATH')
+
+
+def load_preprocessor(preprocessor_file_path):
+    try:
+        with open(preprocessor_file_path, 'rb') as file:
+            preprocessor = pickle.load(file)
+        return preprocessor
+    except Exception as e:
+        raise ActivityException(str(e), sys.exc_info())
+    
+
+def load_model(model_file_path):
+    try:
+        with open(model_file_path, 'rb') as file:
+            model = pickle.load(file)
+        return model
+    except Exception as e:
+        raise ActivityException(str(e), sys.exc_info())
+    
+
+    
     
     
 

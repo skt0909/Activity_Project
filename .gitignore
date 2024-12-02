@@ -26,6 +26,11 @@ share/python-wheels/
 *.egg
 venv/
 MANIFEST
+Artifacts
+logs
+Airflow
+Testing
+
 
 # PyInstaller
 #  Usually these files are written by a python script from a template

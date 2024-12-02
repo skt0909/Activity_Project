@@ -25,3 +25,4 @@ class ModelTrainerConfig:
     trained_model_file=os.path.join("artifacts","model.pkl")
 
 
+

@@ -6,15 +6,20 @@ from Activity_pstructure.logging.logger import logging
 import sys
 import mlflow
 import mlflow.sklearn
+import dagshub
+dagshub.init(repo_owner='skt0909', repo_name='Activity_Project', mlflow=True)
 
 
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import GradientBoostingRegressor
+from sklearn.model_selection import GridSearchCV
 
 from sklearn.metrics import r2_score
 from sklearn.impute import SimpleImputer
 import dill
 import numpy as np
+
+
 
 class ModelTrainer:
     def __init__(self):
@@ -54,6 +59,8 @@ class ModelTrainer:
                 "Gradient Boosting Regressor": GradientBoostingRegressor(),
             }
 
+
+
             # Evaluate models
             model_report: dict = evaluate_models(
                 X_train=X_train, y_train=y_train, 
@@ -84,6 +91,8 @@ class ModelTrainer:
                 obj=best_model
             )
 
+            save_object("final_model/model.pkl",best_model)
+
             # Evaluate on test data
             predicted = best_model.predict(X_test)
             r2_square = r2_score(y_test, predicted)
@@ -92,12 +101,15 @@ class ModelTrainer:
             # Track the model and results with MLflow
             self.track_mlflow(best_model, r2_square, best_model_name)
 
+            
+
             return r2_square
 
         except Exception as e:
             # Provide error details with more context
             error_details = f"An error occurred during model training in the model_trainer module. Error: {str(e)}"
-            raise ActivityException(str(e), error_details) 
+            raise ActivityException(str(e), error_details)
+        
         
         
 

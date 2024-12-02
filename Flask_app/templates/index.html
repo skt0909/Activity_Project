@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitbit OAuth Integration</title>
+</head>
+<body>
+    <style>
+        body {
+    background: linear-gradient(to right, #1e2081, #343a79, #5c6eb8); /* Example gradient background */
+    color: white; /* To make the text visible against the gradient */
+    font-family: Arial, sans-serif;
+    padding: 50px;
+    margin: 0;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    align-items: flex-start; /* Align items to the left */
+}
+
+.content {
+    text-align: center; /* Centers text horizontally */
+}
+
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Stack the buttons vertically */
+    align-items: center; /* Align buttons to the left */
+}
+
+button {
+    background-color: white;
+    color: rgb(1, 1, 4);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button:not(:last-child) {
+    margin-bottom: 7cap; /* Adds space below every button except the last one */
+}
+
+button:hover {
+    background-color: lightgray;
+}
+    </style>
+
+    <h1>FitBit Activity Tracking</h1>
+    <div class="d-grid gap-2 d-md-block">
+        <button class="btn btn-primary" type="button" onclick="location.href='/login'">Login</button>
+        <button class="btn btn-primary" type="button" onclick="location.href='/test'">Test</button>
+    </div>
+</body>
+</html>

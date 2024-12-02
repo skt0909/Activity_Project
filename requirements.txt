@@ -8,7 +8,15 @@ scikit-learn
 pyaml
 dill
 mlflow
+dagshub
 
+Flask
+requests
+fitbit
+flask_sqlalchemy
+requests_oauthlib
+plotly
+apache-airflow
 
 
 
